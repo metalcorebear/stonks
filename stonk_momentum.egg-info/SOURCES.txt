@@ -1,0 +1,9 @@
+README.md
+setup.py
+stock_functions.py
+stonks.py
+stonk_momentum.egg-info/PKG-INFO
+stonk_momentum.egg-info/SOURCES.txt
+stonk_momentum.egg-info/dependency_links.txt
+stonk_momentum.egg-info/requires.txt
+stonk_momentum.egg-info/top_level.txt
