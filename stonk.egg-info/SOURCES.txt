@@ -1,0 +1,9 @@
+README.md
+setup.py
+stock_functions.py
+stonk.py
+stonk.egg-info/PKG-INFO
+stonk.egg-info/SOURCES.txt
+stonk.egg-info/dependency_links.txt
+stonk.egg-info/requires.txt
+stonk.egg-info/top_level.txt

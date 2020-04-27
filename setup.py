@@ -10,8 +10,8 @@ with open("README.md", "r", encoding='utf-8') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="stonk_momentum",
-    version="0.0.2",
+    name="stonk",
+    version="0.0.1",
     author="metalcorebear",
     author_email="mark.mbailey@gmail.com",
     description="A set of tools to pull and analyze stock data.",
@@ -20,7 +20,7 @@ setuptools.setup(
     url="https://github.com/metalcorebear/stonks",
     packages=setuptools.find_packages(),
     install_requires=['requests', 'numpy', 'pandas'],
-    py_modules=["stock_functions", "stonks"],
+    py_modules=["stock_functions", "stonk"],
     package_data={},
     classifiers=[
         "Topic :: Scientific/Engineering :: Mathematics", 

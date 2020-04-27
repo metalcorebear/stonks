@@ -12,14 +12,14 @@ If you want to make this better, let's collaborate!
 
 ## Installation
 
-`pip install stonk-momentum`<br />
+`pip install stonk`<br />
 `pip install git+https://github.com/metalcorebear/stonks.git`
 
 ## Sample usage
 
 ### Initial import
 
-`import stonk_momentum`
+`import stonk`
 
 ### Access historic stock data
 
