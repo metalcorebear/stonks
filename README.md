@@ -25,7 +25,7 @@ If you want to make this better, let's collaborate!
 
 Note that this requires an API key from World Trading Data (www.worldtradingdata.com).<br />
 
-`stock = stonks.stock_API(API_KEY)`<br />
+`stock = stonk.stock_API(API_KEY)`<br />
 Parameters:<br />
 * API_KEY = World Trading Data API Key (str).
 
@@ -37,7 +37,7 @@ Parameters:<br />
 * EX = Exchange on which to base beta calculation (default = '^IXIC')
 * output = dictionary
 
-`intraday_price_dictionary = intraday(TKR, range_=1, interval=60, beta=True, EX='^IXIC')`<br />
+`intraday_price_dictionary = stonk.intraday(TKR, range_=1, interval=60, beta=True, EX='^IXIC')`<br />
 Parameters:<br />
 * TKR = Ticker symbol (str).
 * range_ = Specifies the number of days you want to return data for (int or str).
@@ -50,7 +50,7 @@ Parameters:<br />
 
 If you don't have API access or other real stock data and want to mess around with simulations, this class will generate synthetic price data (either bullish random price or oscillating random price).  Note that these generators are imperfect and will sometimes generate negative prices (if you'd like to contribute to this project and make this function better, please feel free!).<br />
 
-`synthetic_price_generator = stonks.syn_stock()`<br />
+`synthetic_price_generator = stonk.syn_stock()`<br />
 `synthetic_prices =  synthetic_price_generator.oscillator(n, scale=1)`<br />
 `synthetic_prices =  synthetic_price_generator.bullish_random(n, scale=1)`<br />
 Parameters:<br />
@@ -61,7 +61,7 @@ Parameters:<br />
 
 This class will calculate either a stochastic oscillator or relative strength index indicator for a list of stock prices.  Sell or buy signals are also generated.<br />
 
-`stock = analyze(input_, closing_prices='closing_prices')`<br />
+`stock = stonk.analyze(input_, closing_prices='closing_prices')`<br />
 Parameters:<br />
 * input_ = Price list or dictionary (generated from daily_price_dictionary).
 * closing_prices = Key for prices dictionary (default is 'closing_prices').
